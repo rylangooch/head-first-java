@@ -10,10 +10,10 @@ public class Game {
     boolean isAlive = true;
 
     while(isAlive == true) {
-      String guess = helper.getUserInput("enter a numer");
+      String guess = helper.getUserInput("enter a number");
       String result = theDotCom.checkYourself(guess);
       numOfGuesses++;
-      if (result.equals("kills")) {
+      if (result.equals("kill")) {
         isAlive = false;
         System.out.println("You took " + numOfGuesses + " guesses");
       }
