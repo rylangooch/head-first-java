@@ -13,7 +13,7 @@ public class Game {
       String guess = helper.getUserInput("enter a number");
       String result = theDotCom.checkYourself(guess);
       numOfGuesses++;
-      if (result.equals("kill")) {
+      if (result.equals("kill1")) {
         isAlive = false;
         System.out.println("You took " + numOfGuesses + " guesses");
       }
